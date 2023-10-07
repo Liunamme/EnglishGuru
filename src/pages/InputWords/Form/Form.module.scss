@@ -1,0 +1,51 @@
+@import '../../../styles/index.scss';
+
+$formHeigth: 150px;
+$spisokHeight: 300px;
+$excelHeight: 150px;
+
+.form {
+    padding: 10px 20px 0px 20px;
+    height: $formHeigth;
+    width: 350px;
+    background-color: var(--backgroundBlocks);
+    color: var(--globaltextColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Добавляем скрытое переполнение для анимации */
+    transition: height 0.5s ease-in-out;
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+    select {
+        padding: 20px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        color: var(--globaltextColor);
+        border-top: 2px solid var(--globaltextColor);
+        border-bottom: 2px solid var(--globaltextColor);
+        option {
+            background-color: var(--backgroundBlocks);
+        }
+    }
+    &_parametres {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.excel {
+    height: calc($formHeigth + $excelHeight) ;
+}
+.spisok {
+    height: calc($formHeigth + $spisokHeight);
+}

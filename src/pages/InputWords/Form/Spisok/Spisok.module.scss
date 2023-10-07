@@ -1,0 +1,39 @@
+@import '../Form.module.scss';
+
+.form {
+    &_parametres {
+        &_spisok {
+            height: $spisokHeight;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 18px;
+            textarea {
+                border-radius: 10px 10px 0px 0px;
+                padding: 10px;
+                width: 100%;
+                height: 90%;
+                color: var(--globaltextColor);
+                background-color: var(--backgroundBlocks);
+                box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+                resize: none;
+            }
+            textarea::-webkit-scrollbar {
+                width: 5px; /* Измените значение, чтобы задать нужную ширину */
+                
+            }
+            
+            textarea::-webkit-scrollbar-thumb {
+                background-color: var(--globaltextColor); /* Измените цвет ползунка на свой выбор */
+                border-radius: 10px;
+                
+            }
+            .sumbitBtn {
+                width: 100%;
+                border-radius: 0px 0px 10px 10px;
+            }
+        }
+    }
+}
