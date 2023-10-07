@@ -14,7 +14,7 @@ const AppRouter = () => {
 		const navigate = useNavigate();
 		useEffect(() => {
 			const storedPageNow = localStorage.getItem('pageNow') ? localStorage.getItem('pageNow') : '/start';
-				if (storedPageNow === '/start') {
+				if (storedPageNow === '/start' || storedPageNow === '/') {
 					setPageNow('/start');
 					navigate('/start');
 				} else if (storedPageNow === '/test') {
